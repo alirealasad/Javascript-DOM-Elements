@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="app.js"></script>
+    <title>JavaScript DOM Elements</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Product.com</h1>
+          <p>Best Products Online</p>
+          <form id="search-products">
+            <input type="text" placeholder="Search products..." />
+          </form>
+	    	</div>
+	    </header>
+      <form id="add-product">
+        <input type="text" placeholder="Add a product..." />
+        <button>Add</button>
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all products</label>
+      </form>
+	    <div id="product-list">
+	    	<h2 class="title">Products to Buy</h2>
+	    	<ul>
+	    		<li>
+	    			<span contenteditable="false" class="name">Toothpaste</span>
+	    			<span class="delete">delete</span>
+            <span class="edit active">edit</span>
+            <span class="done">done</span>
+	    		</li>
+	    		<li>
+	    			<span contenteditable="false" class="name">Ditergent</span>
+	    			<span class="delete">delete</span>
+            <span class="edit active">edit</span>
+            <span class="done">done</span>
+	    		</li>
+	    		<li>
+	    			<span contenteditable="false" class="name">Oil</span>
+	    			<span class="delete">delete</span>
+            <span class="edit active">edit</span>
+            <span class="done">done</span>
+	    		</li>
+	    		<li>
+	    			<span contenteditable="false" class="name">Shampoo</span>
+	    			<span class="delete">delete</span>
+            <span class="edit active">edit</span>
+            <span class="done">done</span>
+	    		</li>
+	    	</ul>
+	    </div>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>About</p>
+          <p>Product.com is the best website you can ever find! so don't waste you time and shop here</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Contact</p>
+          <p>+1 84*-***-***4 when you need our help please don't call us</p>
+        </div>
+      </div>
+      <footer>
+      <span>©</span><span id="copyright"></span><span>,Designed by Asad. Product.com.</span>
+      </footer>
+    </div>
+  </body>
+</html>
